@@ -11,7 +11,7 @@ pipeline {
 				}
 		stage ('definescript'){
 		   steps {
-		      sh 'sshpass -p "Chinnu143" scp target/class1.war sonu@172.17.0.2:/home/sonu/software/apache-tomcat-8.5.23'}
+		      sh 'sshpass -p "Chinnu143" scp target/class.war sonu@172.17.0.2:/home/sonu/software/apache-tomcat-8.5.23'}
 			}
 		stage ('serverstart') {
 		   steps { 
